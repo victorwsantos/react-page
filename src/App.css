@@ -36,6 +36,10 @@ body{
   margin: 4px;
   font-size: 20px;
 }
+.componentes-topo ul li .Home, .componentes-topo ul li .sobre,.componentes-topo ul li .objetivos, .componentes-topo ul li .Contatos {
+  text-decoration: none;
+  color: white;
+}
 .conteudo-pg{
   height: 400px;
   width: 800px;

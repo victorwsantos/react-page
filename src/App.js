@@ -1,17 +1,11 @@
-import React from "react";
-import Header from './componentes/Header'
-import Footer from './componentes/Footer'
-import Body from "./componentes/Body";
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className='pg-completa'>
-      <Header />
-      < Body />
-      <Footer />
-    </div>
-  );
-}
+import Rotas from './componentes/Rotas';
+
+const App = () => (
+  <div className="App">
+    <Rotas/>
+  </div>
+);
 
 export default App;
