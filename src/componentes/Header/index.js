@@ -5,7 +5,6 @@ export default function Header(){
     function toggleMenu(){
         const nav = document.getElementById('navega');
         nav.classList.toggle('active');
-
     }
     return(
         <div className='topo'>
