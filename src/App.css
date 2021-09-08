@@ -26,6 +26,13 @@ body{
   align-items: center;
   
 }
+.navbutton{
+  background-color: transparent;
+  font-size: 40px;
+  color: white;
+  border: none;
+  display: none;
+}
 .componentes-topo p{
   border: 4px solid white;
   padding: 2px;
@@ -116,11 +123,53 @@ transition: 0.6s;
     width: 100%;
     margin: none;
   }
+  .navbutton{
+    display: block;
+  }
   .topo{
     width: 100%;
   }
-  .componentes-topo nav{
-    display: none;
+  .componentes-topo {
+    padding: 0px;
+  }
+  .componentes-topo p{
+    margin-left: 10px;
+
+  }
+  #navega{
+    display: block;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    visibility: hidden;
+    overflow-y: hidden;
+    background-color: black;
+    transition: 0.6s;
+    height: 0px;
+  }
+  #navega.active{
+    visibility: visible;
+    height: 200px;
+    border-radius: 5px;
+  }
+
+  .componentes-topo nav ul li{
+    display: block;
+    text-align: center;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+    color: white;
+    padding-top: 10px;
+    border-radius: 0px;
+    
+  }
+ 
+  .componentes-topo nav ul{
+    padding-left: 0px;
+    
+  }
+  .componentes-topo ul li .Home, .componentes-topo ul li .sobre,.componentes-topo ul li .objetivos, .componentes-topo ul li .Contatos {
+    color: rgb(255, 255, 255);
+    
     
   }
 }
