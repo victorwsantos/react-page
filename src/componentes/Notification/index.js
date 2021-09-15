@@ -1,16 +1,16 @@
 import React, {useState} from "react";
+
 export default function Notification(){
-const [nome, setNome] = useState(0);
-    function nomeVisitante(){
-        setNome(nome +1 )
-        
-    }
-return(
-    <div className='notificacao'>
-        <div className='elementos'>
-            <p>Quantidade de Visitantes {nome}</p>
-            <button onClick={nomeVisitante}>Entrar</button>
+
+   var nome = document.getElementById('nomeDigitado').value;
+   document.getElementById('span').innerHTML = nome
+    return(
+        <div className='notificacao'>
+            <div className='elementos'>
+                <p>Olá, <span id='span'></span>!!</p>
+                <input id='nomeDigitado' type='text' placeholder='Digite seu nome'></input>
+                <button onClick={Notification}>Entrar</button>
+            </div>
         </div>
-    </div>
 )
 }
