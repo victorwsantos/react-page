@@ -9,6 +9,7 @@ const Objetivos = () => (
         <div id='objetivos'>
             <div id="apresentacao">
                 <h2>Ser um Desenvolvedor completo</h2>
+                <p><b><span>"</span>Everything can be improved."</b></p>
                 <p>Certo dia vi esta frase na parede da empresa em que trabalho e  isto me fez refletir principamente sobre a minha carreira. Aplicar esta metodologia de que tudo pode ser melhorado
                     acaba sendo de certa forma um mantra no ramo do desenvolvimento de software, onde devemos melhora-los dia após dia!
                 </p>
