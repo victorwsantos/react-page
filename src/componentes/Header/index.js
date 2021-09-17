@@ -12,10 +12,10 @@ export default function Header(){
                 <p className='logo'>Victor Santos</p>
                 <nav id='navega'>
                     <ul id='menu'>
-                        <li><Link className="Home" to='/'>Home</Link></li>
-                        <li><Link className="objetivos" to='/Objetivos'>Objetivos</Link></li>
-                        <li><Link className="sobre" to='/Sobre'>Sobre</Link></li>
-                        <li><Link className="Contatos" to='/Contatos'>Contatos</Link></li>
+                        <li><Link to='/' className="Home" >Home</Link></li>
+                        <li><Link to='/Objetivos' className="objetivos" >Objetivos</Link></li>
+                        <li><Link to='/Sobre' className="sobre" >Sobre</Link></li>
+                        <li><Link to='/Contatos' className="Contatos">Contatos</Link></li>
                     </ul>
                 </nav>
                 <button id='btn-mb' className="navbutton" onClick={toggleMenu}>&#9776;</button>
