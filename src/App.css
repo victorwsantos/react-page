@@ -10,13 +10,10 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   align-items: center;
   width: 100%;
 }
-#paginaObjetivos{
-  height: 100vh;
-}
+
 .topo{
   height: 90px;
   background-color: rgb(0, 0, 0);
@@ -70,6 +67,7 @@ body{
   flex-grow: 1;
   transition: 0.6s;
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.418);
+  flex-wrap: wrap;
 }
 .conteudo-pg h1{
   margin-top: 40px;
@@ -104,7 +102,6 @@ body{
   width: 100%;
   text-align: center;
   height: 50px;
-  margin-top: 50px;
 }
 .botoes-pg-index button:hover{
   background-color: rgba(0, 0, 0, 0.253);
@@ -138,9 +135,28 @@ transition: 0.6s;
 #paginaObjetivos{
   display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
+    height: 100vh;
 }
+.sonhos{
+  margin-top: 40px;
+}
+.flashCards{
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.747);
+  color: white;
+  height: 400px;
+  padding: 9px;
+  
 
+}
+.flashsHome{
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
 @media (max-width: 700px){
   .botoes-pg-index{
     margin-top: 50px;
