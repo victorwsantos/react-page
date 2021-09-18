@@ -5,6 +5,7 @@ import FlashCards from "../FlashCards";
 
 
 function Home() {
+  
   return (
     <div className='pg-completa'>
       <Header />
@@ -28,10 +29,16 @@ function Home() {
                 <FlashCards titulo='Projeto Feito para Stefanini' descricao='Controle de ativos de técnologia'/>
                 <FlashCards titulo='Curiosidades do mundo do Jiu-Jitsu' descricao='Blog Pessoal'/>
                 <FlashCards titulo='Web Site totalmente Responsivo' descricao='Loja de Suplementos'/>
-              </div>        
+                
+              </div>   
+             <div>
+             <Footer/> 
+             </div>
+                 
       </div>
-      <Footer/>
+      
     </div>
+    
   );
 }
 export default Home;

@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function FlashCards(props){
+    const card = document.getElementsByClassName('flashCards')
+    
     return(
         <div className='flashCards'>
             <h2>{props.titulo}</h2>
