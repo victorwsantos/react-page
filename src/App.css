@@ -4,8 +4,10 @@
 }
 body{
   margin: none;
+  position: relative;
   
 }
+
 
 .topo{
   height: 90px;
@@ -84,6 +86,7 @@ body{
   width: 100%;
   text-align: center;
   height: 50px;
+  position: absolute
 }
 .botoes-pg-index button:hover{
   background-color: rgba(0, 0, 0, 0.253);
@@ -103,6 +106,7 @@ transition: 0.6s;
 #apresentacao{
   width: 35%;
 }
+
 #apresentacao p{
   padding: 0px;
 }
@@ -117,7 +121,8 @@ transition: 0.6s;
 #paginaObjetivos{
   display: flex;
     flex-direction: column;
-    justify-content: space-between 
+    justify-content: space-between;
+    
 }
 .sonhos{
   margin-top: 40px;
@@ -130,6 +135,12 @@ transition: 0.6s;
   margin-top: 10px;
   padding: 10px;
 }
+.pg-completa{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 .flashsHome{
   display: flex;
   justify-content: space-between;
@@ -137,6 +148,7 @@ transition: 0.6s;
   margin: 20px auto;
   flex-wrap: wrap;
   border-top: 10px;
+  flex-grow: 1;
   
 }
 @media (max-width: 700px){
@@ -170,7 +182,6 @@ transition: 0.6s;
     overflow-y: hidden;
     background-color: black;
     transition: 0.6s;
-    height: 0px;
     z-index: 100;
   }
   #navega.active{

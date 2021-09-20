@@ -13,7 +13,7 @@ export default function Header(){
                 <nav id='navega'>
                     <ul id='menu'>
                         <li><Link to='/' className="Home" >Home</Link></li>
-                        <li><Link to='/Objetivos' className="objetivos" >Objetivos</Link></li>
+                        <li><Link to='/Objetivos' className="objetivos" >Curriculo</Link></li>
                         <li><Link to='/Sobre' className="sobre" >Sobre</Link></li>
                         <li><Link to='/Contatos' className="Contatos">Contatos</Link></li>
                     </ul>

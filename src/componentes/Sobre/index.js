@@ -7,10 +7,7 @@ const Sobre = () => (
     <div>
     < Header />
     <div>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        
     </div>
     < Footer  />
 
