@@ -2,10 +2,11 @@ import React from "react";
 import Header from '../Header'
 import Footer from '../Footer'
 import FlashCards from "../FlashCards";
-
+import Perfil from "../Perfil";
 
 function Home() {
   
+
   return (
     <div className='pg-completa'>
       <Header />

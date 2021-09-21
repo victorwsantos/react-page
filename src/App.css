@@ -151,6 +151,15 @@ transition: 0.6s;
   flex-grow: 1;
   
 }
+.flashsCurriculo{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  border-top: 10px;
+  flex-grow: 1;
+}
 @media (max-width: 700px){
   .botoes-pg-index{
     margin-top: 50px;
