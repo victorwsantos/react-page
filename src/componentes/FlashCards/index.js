@@ -1,14 +1,21 @@
 import React from "react";
 
 export default function FlashCards(props){
-    const card = document.getElementsByClassName('flashCards')
-    
+         
     return(
-        <div className='flashCards'>
-            <h2>{props.titulo}</h2>
-            <hr></hr>
-            <p>{props.descricao}</p>
-            {props.img}
+        <div id='flashCards'>
+            <div>
+                <h2>{props.titulo}</h2>
+            </div>
+            <div>
+                <hr></hr>
+            </div>
+            <div>
+                <p>{props.descricao}</p>
+            </div>
+            <div>
+                <img className='imagem' src={props.img}/>
+            </div>
         </div>
     )
 }

@@ -6,7 +6,15 @@ import Perfil from "../Perfil";
 
 function Home() {
   
-
+  function flashAtive(){
+    const cartao = document.getElementById('flashCards');
+    cartao.style.opacity=('0.5')
+}
+function flashDesactive(){
+    const cartao = document.getElementById('flashCards');
+    cartao.style.opacity=('1')
+}
+     
   return (
     <div className='pg-completa'>
       <Header />
@@ -24,9 +32,9 @@ function Home() {
                   <p>Este Portfólio tem como principal objetivo apresentar minhas skills na cricação de Web Sites utilizando variadas técnologias.</p>
               </div>
               <div className='flashsHome'>
-                <FlashCards titulo='Projeto Feito para Stefanini' descricao='Controle de ativos de técnologia'/>
-                <FlashCards titulo='Curiosidades do mundo do Jiu-Jitsu' descricao='Blog Pessoal'/>
-                <FlashCards titulo='Web Site totalmente Responsivo' descricao='Loja de Suplementos'/>      
+                <FlashCards id='flashCards' titulo='Projeto Feito para Stefanini' descricao='Controle de ativos de técnologia'/>
+                <FlashCards id='flashCards' titulo='Curiosidades do mundo do Jiu-Jitsu' descricao='Blog Pessoal'/>
+                <FlashCards id='flashCards' titulo='Web Site totalmente Responsivo' descricao='Loja de Suplementos'/>      
               </div>
       <div>   
         < Footer/>

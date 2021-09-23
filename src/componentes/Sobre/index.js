@@ -4,7 +4,7 @@ import Footer from "../Footer"
 import '../../App.css';
 
 const Sobre = () => (
-    <div>
+    <div >
     < Header />
     <div>
         
