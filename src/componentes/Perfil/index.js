@@ -19,11 +19,11 @@ export default function Curriculo(){
                     <h2>Confira abaixo minhas experiências</h2>
                 </div>
                 <div className='flashsCurriculo'>
-                    < FlashCards titulo='Vs Soluções' descricao='Desenvolvedor Freelancer' img='imagens/positiva_logo.jpeg'/>
+                    < FlashCards titulo='Vs Soluções' descricao='Desenvolvedor Freelancer' img='imagens/imac.png'/>
                    < FlashCards titulo='Stefanini' descricao='Analista de Suporte'img='imagens/Stefanini_logo.png' />
-                   < FlashCards titulo='Vs Soluções' descricao='Micro Empreendedor' img=''/>
+                   < FlashCards titulo='Vs Soluções' descricao='Micro Empreendedor' img='imagens/imac.png'/>
                    < FlashCards titulo='Techmach' descricao='Técnico de impressoras pleno' img='imagens/tecmach-logo.png'/>
-                   < FlashCards titulo='Sonda IT' descricao='Coordenador de Helpdesk' img='imagens/Sonda_Logo.png'/>
+                   < FlashCards titulo='Sonda IT' descricao='Coordenador de Helpdesk' img='imagens/Sonda_Logo.jpeg'/>
                    < FlashCards titulo='Tecmach' descricao='Técnico de impressora JR' img='imagens/tecmach-logo.png'/>
                     < FlashCards titulo='Grupo Positiva' descricao='Técnico em Eletronica JR' img='imagens/positiva_logo.jpeg'/>
                    < FlashCards titulo='Grupo Positiva' descricao='Estágio técnico' img='imagens/positiva_logo.jpeg'/>
