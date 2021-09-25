@@ -4,17 +4,19 @@ export default function Box(props){
 
     return(
         <div id='boxMesage'>
-            <div>
-                <h2>{props.titulo}</h2>
+            <div className='boxTitle'>
+                <div>
+                    <h2>{props.titulo}</h2>
+                </div>
+                <div>
+                    <img className='boxImg' src={props.imag} />
+                </div>
             </div>
             <div>
                 <hr></hr>
             </div>
             <div>
                 <p>{props.informacao}</p>
-            </div>
-            <div>
-                <textarea></textarea>
             </div>
             <div>
                 <button>{props.butao}</button>
