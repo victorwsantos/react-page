@@ -58,6 +58,14 @@ body{
   padding: 40px;
   box-shadow: 0 0 10px;
 }
+#apresentacao{
+  padding: 10px;
+}
+#topPage{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
 .conteudo-pg:hover{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.418);
   transition: 0.6s;
@@ -111,7 +119,8 @@ body{
   
 }
 #apresentacao{
-  width: 35%;
+  width: 55%;
+  z-index: 100;
 }
 
 #apresentacao p{
@@ -131,8 +140,12 @@ body{
     justify-content: space-between;
     
 }
+#imgIndex-phone{
+  display: none;
+}
 .sonhos{
   margin-top: 40px;
+  padding: 20px ;
 }
 #flashCards{
   width: 300px;
@@ -337,6 +350,15 @@ font-size: 15pt;
 }
 
 @media (max-width: 700px){
+  #topPage{
+    flex-direction: column;
+  }
+  #imgIndex-phone{
+    display: block;
+  }
+  #imgIndex{
+    display: none;
+  }
   .botoes-pg-index{
     margin-top: 50px;
   }
