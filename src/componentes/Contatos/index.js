@@ -9,7 +9,7 @@ const Contatos = () => (
         < Header />            
     </div>
     <div>
-       < Cards />
+        < Cards />
     </div>
     <div>
         < Footer  />

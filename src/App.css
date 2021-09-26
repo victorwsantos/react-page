@@ -69,6 +69,7 @@ body{
 .conteudo-pg:hover{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.418);
   transition: 0.6s;
+  
   }
 
   .conteudo-pg h1{
@@ -188,8 +189,43 @@ margin-top: -60px;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  
 }
 
+.conteudo-contrate{
+  display: flex;
+  justify-content: space-between;
+  top: 90px;
+  width: 100%;
+
+ 
+}
+.conteudo-contrate div{
+  width: 100%;
+}
+.conteudo-contrate div img{
+object-fit: cover;
+}
+.conteudo-texto{
+  margin: auto auto;
+}
+.conteudo-texto h2, .conteudo-texto p {
+  text-align: center;
+}
+.conteudo-texto h2{
+  margin-bottom: 5px;
+}
+.conteudo-texto p{
+  margin-top: 5px;
+  color:rgb(124, 124, 124)
+}
+.conteudo-portfolio{
+  display: flex;
+justify-content: space-between;
+padding: 20px;
+flex-wrap: wrap;
+width: 100%;
+}
 .flashsHome{
   display: flex;
   justify-content: space-between;
@@ -271,6 +307,9 @@ font-size: 15pt;
 #Whats{
   display: none;
   transition: 0.6s;
+  position: relative;
+  margin: auto auto;
+  
 }
 
 .Whats{
