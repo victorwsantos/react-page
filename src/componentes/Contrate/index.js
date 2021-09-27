@@ -19,9 +19,14 @@ const Contrate = () => (
       <p>fazemos o projeto do seu Blog, loja Virtural, Newsletter e etc..</p>
     </div>
     <div className='conteudo-portfolio'>
-        <FlashCards titulo='Ecommerc de Moveis' descricao='Este Web site foi feito para uma loja de moveis, Confira no Link abaixo' />
-        <FlashCards titulo='Ecommerc de SexySHop' descricao='Conteudo Adulto'/>
-        <FlashCards />
+        <div>
+        <hr></hr>
+          <h3>Nossa empresa se encarrega de realizar seu sonho!</h3>
+          <hr></hr>
+        </div>
+        <div>
+          <img height='650px' width='550px'src='imagens/imagem4.jpg'/>
+        </div>
     </div>
     <div>
       < Footer  />

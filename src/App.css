@@ -234,9 +234,10 @@ object-fit: cover;
   color:rgb(124, 124, 124)
 }
 .conteudo-portfolio{
+  text-align: center;
   display: flex;
-justify-content: space-between;
-padding: 20px;
+justify-content: space-around;
+padding: 05px;
 flex-wrap: wrap;
 width: 100%;
 }
@@ -420,6 +421,12 @@ font-size: 15pt;
   }
   #imgIndex-phone{
     display: block;
+  }
+  .conteudo-portfolio img{
+  width: 98%;
+  height: 450px;
+  align-items: center;
+  border-radius: 10px;
   }
   #imgIndex{
     display: none;
