@@ -147,6 +147,20 @@ body{
 .sonhos{
   margin-top: 40px;
   padding: 20px ;
+  text-align: center;
+  
+}
+.sonhos hr{
+  width: 98%;
+
+}
+.sonhos h2{
+  letter-spacing: 7px;
+}
+.sonhos h3{
+  color:rgb(124, 124, 124);
+  text-decoration: none;
+  font-weight: normal;
 }
 #flashCards{
   width: 300px;
@@ -235,6 +249,15 @@ width: 100%;
   border-top: 10px;
   flex-grow: 1;
 }
+.flashsHome-backend{
+  display: flex;
+  justify-content: space-around;
+  width: 98%;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  border-top: 10px;
+  flex-grow: 1;
+}
 .flashsCurriculo{
   display: flex;
   justify-content: space-around;
@@ -302,6 +325,9 @@ padding: 10px;
 color: white;
 border-radius: 50px;
 font-size: 15pt;
+}
+.curriculo, .pg-curriculo{
+  padding: 20px;
 }
 
 #Whats{
@@ -454,6 +480,11 @@ font-size: 15pt;
     color: rgb(255, 255, 255);
     
     
+  }
+  .flashsHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .botoes-pg-index{
     margin-top: 30px;
