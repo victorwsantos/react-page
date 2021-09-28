@@ -287,40 +287,41 @@ width: 100%;
   border-top: 10px;
   flex-grow: 1;
 }
-.boxTitle{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #0073b1;
-  padding: 10px;
-  
-  border-radius: 10px;
-  margin-top: 0px;
+#boxMesage button{
+  cursor: pointer;
 }
 .boxImg{
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  position: absolute;
+  left: 400px;
+  top: 10px;
+  margin: 0px 0px;
 }
+
 
 #linkeDin{
   display: none;
   transition: 0.6s;
-  
-  
+  position: relative;
+  margin: auto auto;
+  width: 80%;
 }
 .linke{
   box-shadow: 0 0 2px;
   border-radius: 15px;
   padding: 5px;
-  width: 50%;
   position: relative;
   margin: auto auto;
   margin-top: 30px;
 }
 .linke h2{
   color: white;
+  background-color:#0073b1;
+   padding: 20px;
+   margin: 0px 0px;
+   border-radius: 10px;
   
 }
 .linke hr{
@@ -329,13 +330,7 @@ width: 97%;
 .linke p{
   padding: 10px;
   }
-.linke textarea{
-  width: 99%;
-  border: 0073b1;
-  border-radius: 10px;
-  height: 70px;
-  
-}
+
 .linke button{
 margin: 30px auto;
 width: 99%;
@@ -345,6 +340,7 @@ padding: 10px;
 color: white;
 border-radius: 50px;
 font-size: 15pt;
+cursor: pointer;
 }
 .curriculo, .pg-curriculo{
   padding: 20px;
@@ -361,6 +357,7 @@ width: 98%;
   transition: 0.6s;
   position: relative;
   margin: auto auto;
+  width: 80%;
   
 }
 
@@ -368,13 +365,17 @@ width: 98%;
   box-shadow: 0 0 2px;
   border-radius: 15px;
   padding: 5px;
-  width: 50%;
   position: relative;
   margin: auto auto;
   margin-top: 30px;
 }
 .Whats h2{
   color: white;
+ background-color:#009688 ;
+ padding: 20px;
+  margin: 0px 0px;
+  border-radius: 10px;
+  align-items: center;
 }
 .Whats hr{
 width: 97%;
@@ -382,13 +383,7 @@ width: 97%;
 .Whats p{
   padding: 10px;
   }
-.Whats textarea{
-  width: 99%;
-  border: 0073b1;
-  border-radius: 10px;
-  height: 70px;
-  
-}
+
 .Whats button{
 margin: 30px auto;
 width: 99%;
@@ -398,23 +393,30 @@ padding: 10px;
 color: white;
 border-radius: 50px;
 font-size: 15pt;
+cursor: pointer;
 }
 #Discord{
   display: none;
   transition: 0.6s;
+  position: relative;
+  margin: auto auto;
+  width: 80%;
 }
 
 .Discord{
   box-shadow: 0 0 2px;
   border-radius: 15px;
   padding: 5px;
-  width: 50%;
   position: relative;
   margin: auto auto;
   margin-top: 30px;
 }
 .Discord h2{
+  background-color: #2e336d;
   color: white;
+  padding: 20px;
+  margin: 0px 0px;
+  border-radius: 10px;
 }
 .Discord hr{
 width: 97%;
@@ -422,22 +424,17 @@ width: 97%;
 .Discord p{
   padding: 10px;
   }
-.Discord textarea{
-  width: 99%;
-  border: 0073b1;
-  border-radius: 10px;
-  height: 70px;
-  
-}
+
 .Discord button{
 margin: 30px auto;
 width: 99%;
 border: none;
-background-color: #5865f2;
+background-color: #2e336d;
 padding: 10px;
 color: white;
 border-radius: 50px;
 font-size: 15pt;
+cursor: pointer;
 }
 
 @media (max-width: 700px){

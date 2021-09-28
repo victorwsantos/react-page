@@ -7,9 +7,10 @@ export default function Box(props){
             <div className='boxTitle'>
                 <div>
                     <h2>{props.titulo}</h2>
+                    
                 </div>
                 <div>
-                    <img className='boxImg' src={props.imag} />
+                
                 </div>
             </div>
             <div>
@@ -18,9 +19,7 @@ export default function Box(props){
             <div>
                 <p>{props.informacao}</p>
             </div>
-            <div>
-                <button>{props.butao}</button>
-            </div>
+            
         </div>
     )
 }
