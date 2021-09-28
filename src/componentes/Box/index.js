@@ -5,7 +5,10 @@ export default function Box(props){
     return(
         <div id='boxMesage'>
             <div>
-                <h2>{props.titulo}</h2>
+                <div>
+                    <h2>{props.titulo}</h2>
+                </div>
+                
             </div>
             <div>
                 <hr></hr>
@@ -13,12 +16,7 @@ export default function Box(props){
             <div>
                 <p>{props.informacao}</p>
             </div>
-            <div>
-                <textarea></textarea>
-            </div>
-            <div>
-                <button>{props.butao}</button>
-            </div>
+            
         </div>
     )
 }

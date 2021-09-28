@@ -58,9 +58,19 @@ body{
   padding: 40px;
   box-shadow: 0 0 10px;
 }
+#apresentacao{
+  padding: 10px;
+}
+#topPage{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+}
 .conteudo-pg:hover{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.418);
   transition: 0.6s;
+  
   }
 
   .conteudo-pg h1{
@@ -111,7 +121,8 @@ body{
   
 }
 #apresentacao{
-  width: 35%;
+  width: 55%;
+  z-index: 100;
 }
 
 #apresentacao p{
@@ -131,8 +142,34 @@ body{
     justify-content: space-between;
     
 }
+#imgIndex-phone{
+  display: none;
+}
 .sonhos{
   margin-top: 40px;
+  padding: 20px ;
+  text-align: center;
+  
+}
+.sonhos hr{
+  width: 98%;
+
+}
+.sonhos h2{
+  letter-spacing: 7px;
+}
+.sonhos h3{
+  color:rgb(124, 124, 124);
+  text-decoration: none;
+  font-weight: normal;
+}
+.conteudo-portfolio-trabalhos h3{
+  letter-spacing: 7px;
+}
+.conteudo-portfolio-trabalhos div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #flashCards{
   width: 300px;
@@ -175,8 +212,54 @@ margin-top: -60px;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  
 }
+.img-curriculo img{
+  border-radius: 100px;
+}
+.conteudo-contrate{
+  
+  display: flex;
+  justify-content: space-between;
+  top: 90px;
+  width: 100%;
 
+ 
+}
+.conteudo-contrate div{
+  width: 100%;
+}
+.conteudo-contrate div img{
+object-fit: cover;
+}
+.conteudo-texto{
+  margin: 20px auto;
+}
+.conteudo-texto h2, .conteudo-texto p {
+  text-align: center;
+}
+.conteudo-texto h2{
+  margin-bottom: 5px;
+}
+.conteudo-texto p{
+  margin-top: 5px;
+  color:rgb(124, 124, 124)
+}
+.conteudo-portfolio{
+
+  display: flex;
+justify-content: space-around;
+padding: 05px;
+flex-wrap: wrap;
+width: 100%;
+}
+.conteudo-portfolio-texto{
+  width: 40%;
+}
+.conteudo-portfolio-texto h3{
+  text-align: center;
+
+}
 .flashsHome{
   display: flex;
   justify-content: space-between;
@@ -185,7 +268,15 @@ margin-top: -60px;
   flex-wrap: wrap;
   border-top: 10px;
   flex-grow: 1;
-  
+}
+.flashsHome-backend{
+  display: flex;
+  justify-content: space-around;
+  width: 98%;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  border-top: 10px;
+  flex-grow: 1;
 }
 .flashsCurriculo{
   display: flex;
@@ -196,26 +287,45 @@ margin-top: -60px;
   border-top: 10px;
   flex-grow: 1;
 }
+.boxTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #0073b1;
+  padding: 10px;
+  
+  border-radius: 10px;
+  margin-top: 0px;
+}
+.boxImg{
+  width: 30px;
+  height: 30px;
+}
+
 #linkeDin{
   display: none;
-  
-  
+  transition: 0.6s;
+  position: relative;
+  margin: auto auto;
+  width: 89%;
 }
 .linke{
   box-shadow: 0 0 2px;
   border-radius: 15px;
   padding: 5px;
-  width: 50%;
   position: relative;
   margin: auto auto;
   margin-top: 30px;
 }
 .linke h2{
   background-color: #0073b1;
-  padding: 10px;
   color: white;
+  padding: 20px;
   border-radius: 10px;
-  margin-top: 0px;
+  margin: 0px 0px;
+  
 }
 .linke hr{
 width: 97%;
@@ -223,13 +333,7 @@ width: 97%;
 .linke p{
   padding: 10px;
   }
-.linke textarea{
-  width: 99%;
-  border: 0073b1;
-  border-radius: 10px;
-  height: 70px;
-  
-}
+
 .linke button{
 margin: 30px auto;
 width: 99%;
@@ -240,11 +344,152 @@ color: white;
 border-radius: 50px;
 font-size: 15pt;
 }
+.curriculo, .pg-curriculo{
+  padding: 20px;
+}
 
+.pg-curriculo{
+text-align: center;
+}
+.pg-curriculo hr{
+width: 98%;
+}
 #Whats{
   display: none;
+  transition: 0.6s;
+  position: relative;
+  margin: auto auto;
+  width: 89%;
 }
+
+.Whats{
+  box-shadow: 0 0 2px;
+  border-radius: 15px;
+  padding: 5px;
+  position: relative;
+  margin: auto auto;
+  margin-top: 30px;
+}
+.Whats h2{
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px 0px;
+}
+.Whats hr{
+width: 97%;
+}
+.Whats p{
+  padding: 10px;
+  }
+
+.Whats button{
+margin: 30px auto;
+width: 99%;
+border: none;
+background-color: #009688;
+padding: 10px;
+color: white;
+border-radius: 50px;
+font-size: 15pt;
+}
+#Discord{
+  display: none;
+  transition: 0.6s;
+  position: relative;
+  margin: auto auto;
+  width: 89%;
+}
+
+.Discord{
+  box-shadow: 0 0 2px;
+  border-radius: 15px;
+  padding: 5px;
+  position: relative;
+  margin: auto auto;
+  margin-top: 30px;
+}
+.Discord h2{
+  background-color: #313a97;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px 0px;
+}
+.Discord hr{
+width: 97%;
+}
+.Discord p{
+  padding: 10px;
+  }
+
+.Discord button{
+margin: 30px auto;
+width: 99%;
+border: none;
+background-color: #313a97;
+padding: 10px;
+color: white;
+border-radius: 50px;
+font-size: 15pt;
+}
+
 @media (max-width: 700px){
+  #topPage{
+    flex-direction: column;
+  }
+  #flashCards{
+    border-radius: 10px;
+    width: 98%;
+  }
+  #flashCards img{
+    margin: auto auto;
+    border-radius: 10px;
+    width: 98%;
+  }
+  #imgIndex-phone{
+    display: block;
+  }
+  .conteudo-portfolio-trabalhos div{
+    margin: auto auto;
+  }
+  .flashsCurriculo{
+    margin: auto auto;
+    width: 98%;
+  }
+  .curriculo{
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+#apresentacao{
+  width: 98%;
+}
+  .conteudo-contrate{
+    align-items: center;
+  }
+  .conteudo-portfolio img{
+  width: 98%;
+  height: 450px;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  
+  }
+  .conteudo-portfolio{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .conteudo-portfolio-texto{
+    width: 95%;
+  
+  }
+  #imgIndex{
+    display: none;
+  }
   .botoes-pg-index{
     margin-top: 50px;
   }
@@ -301,6 +546,11 @@ font-size: 15pt;
     color: rgb(255, 255, 255);
     
     
+  }
+  .flashsHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .botoes-pg-index{
     margin-top: 30px;
