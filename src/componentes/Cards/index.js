@@ -33,7 +33,15 @@ export default function Cards(){
         edin.style.display=('none')
         disc.style.display=('block')
     }
-    
+    function goout(){
+        const goto = document.getElementById('three')
+        const edin = document.getElementById('linkeDin')
+        const what = document.getElementById('Whats')
+        const disc = document.getElementById('Discord') 
+        what.style.display=('none')
+        edin.style.display=('none')
+        disc.style.display=('none')
+    }
     return(
         
         <div  className='div-contatos'>
@@ -43,13 +51,13 @@ export default function Cards(){
                 <div className='botoes-pg-index'>
                     <button onClick={go}  id='one'>Linkedin</button>
                     <button onClick={gotow} id='tow'>WhatsApp</button>
-                    <button id='three'onClick={gothree}>GitHub</button>
+                    <button id='three'onClick={gothree}>Discord</button>
                 </div>
-            <div id='Whats'>
-            <    Whats/>
+                <div id='Whats'>
+            < Whats/>
             </div>
             <div id='linkeDin'>
-                < Linkedin/>
+            < Linkedin/>
             </div>
             <div id='Discord'>
                 < Discord />
