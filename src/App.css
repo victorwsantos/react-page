@@ -307,8 +307,9 @@ width: 100%;
 #linkeDin{
   display: none;
   transition: 0.6s;
+  position: relative;
+  margin: auto auto;
   width: 89%;
-  
 }
 .linke{
   box-shadow: 0 0 2px;
@@ -319,7 +320,11 @@ width: 100%;
   margin-top: 30px;
 }
 .linke h2{
+  background-color: #0073b1;
   color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px 0px;
   
 }
 .linke hr{
@@ -366,7 +371,11 @@ width: 98%;
   margin-top: 30px;
 }
 .Whats h2{
+  background-color: #009688;
   color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px 0px;
 }
 .Whats hr{
 width: 97%;
@@ -388,6 +397,8 @@ font-size: 15pt;
 #Discord{
   display: none;
   transition: 0.6s;
+  position: relative;
+  margin: auto auto;
   width: 89%;
 }
 
@@ -400,7 +411,11 @@ font-size: 15pt;
   margin-top: 30px;
 }
 .Discord h2{
+  background-color: #313a97;
   color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px 0px;
 }
 .Discord hr{
 width: 97%;
@@ -413,7 +428,7 @@ width: 97%;
 margin: 30px auto;
 width: 99%;
 border: none;
-background-color: #5865f2;
+background-color: #313a97;
 padding: 10px;
 color: white;
 border-radius: 50px;

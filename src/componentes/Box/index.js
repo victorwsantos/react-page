@@ -4,7 +4,7 @@ export default function Box(props){
 
     return(
         <div id='boxMesage'>
-            <div className='boxTitle'>
+            <div>
                 <div>
                     <h2>{props.titulo}</h2>
                 </div>
