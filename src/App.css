@@ -307,14 +307,13 @@ width: 100%;
 #linkeDin{
   display: none;
   transition: 0.6s;
-  
+  width: 89%;
   
 }
 .linke{
   box-shadow: 0 0 2px;
   border-radius: 15px;
   padding: 5px;
-  width: 50%;
   position: relative;
   margin: auto auto;
   margin-top: 30px;
@@ -329,13 +328,7 @@ width: 97%;
 .linke p{
   padding: 10px;
   }
-.linke textarea{
-  width: 99%;
-  border: 0073b1;
-  border-radius: 10px;
-  height: 70px;
-  
-}
+
 .linke button{
 margin: 30px auto;
 width: 99%;
@@ -361,14 +354,13 @@ width: 98%;
   transition: 0.6s;
   position: relative;
   margin: auto auto;
-  
+  width: 89%;
 }
 
 .Whats{
   box-shadow: 0 0 2px;
   border-radius: 15px;
   padding: 5px;
-  width: 50%;
   position: relative;
   margin: auto auto;
   margin-top: 30px;
@@ -382,13 +374,7 @@ width: 97%;
 .Whats p{
   padding: 10px;
   }
-.Whats textarea{
-  width: 99%;
-  border: 0073b1;
-  border-radius: 10px;
-  height: 70px;
-  
-}
+
 .Whats button{
 margin: 30px auto;
 width: 99%;
@@ -402,13 +388,13 @@ font-size: 15pt;
 #Discord{
   display: none;
   transition: 0.6s;
+  width: 89%;
 }
 
 .Discord{
   box-shadow: 0 0 2px;
   border-radius: 15px;
   padding: 5px;
-  width: 50%;
   position: relative;
   margin: auto auto;
   margin-top: 30px;
@@ -422,13 +408,7 @@ width: 97%;
 .Discord p{
   padding: 10px;
   }
-.Discord textarea{
-  width: 99%;
-  border: 0073b1;
-  border-radius: 10px;
-  height: 70px;
-  
-}
+
 .Discord button{
 margin: 30px auto;
 width: 99%;
