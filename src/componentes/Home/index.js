@@ -12,9 +12,7 @@ function Home() {
         <div>
           <Apresentacao />
         </div>
-        <div>
-          < ConteudoHome />
-        </div>
+        
       <div>   
         < Footer/>
       </div>

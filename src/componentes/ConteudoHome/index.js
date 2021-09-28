@@ -5,7 +5,16 @@ export default function ConteudoHome(){
     <div>
         <div className='sonhos'>
             <hr></hr>
-            <h2>Caminhada da evolução</h2>
+            <h2>Formação Academica</h2>
+            <hr></hr>
+        </div>
+        <div className='flashsHome-backend'>
+        <FlashCards  titulo='CEFEM' descricao='Ensino médio técnico - Informatica'img='imagens/cefem.png'/>
+        <FlashCards  titulo='IBMR' descricao='Superior em Gestão de Técnologia da Informação' img='imagens/ibmr.png'/>
+        </div>
+        <div className='sonhos'>
+            <hr></hr>
+            <h2>Conhecimentos em Programação</h2>
             <hr></hr>
         </div>
         <div className='flashsHome'>

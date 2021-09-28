@@ -1,11 +1,13 @@
 import React from 'react';
 import FlashCards from '../FlashCards'
-
+import ConteudoHome from '../ConteudoHome';
 
 export default function Curriculo(){
     return(
             <div>
-                <div>IMG</div>
+                <div className='img-curriculo'>
+                    <img width='200px' height='200px' src='imagens/foto-curriculo.jpeg'/>
+                </div>
                 <div>
                     <h3>Perfil profissional</h3>
                     <p>Sou um Profissional extremante dedicado, criativo, com vontade de aprender, dinâmico e com forte espírito de equipe</p>
@@ -27,6 +29,9 @@ export default function Curriculo(){
                    < FlashCards titulo='Tecmach' descricao='Técnico de impressora JR' img='imagens/tecmach-logo.png'/>
                     < FlashCards titulo='Grupo Positiva' descricao='Técnico em Eletronica JR' img='imagens/positiva_logo.jpeg'/>
                    < FlashCards titulo='Grupo Positiva' descricao='Estágio técnico' img='imagens/positiva_logo.jpeg'/>
+                </div>
+                <div>
+                    < ConteudoHome />
                 </div>
             </div>
         )

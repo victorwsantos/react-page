@@ -65,6 +65,7 @@ body{
   display: flex;
   justify-content: space-around;
   padding: 10px;
+  align-items: center;
 }
 .conteudo-pg:hover{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.418);
@@ -162,6 +163,14 @@ body{
   text-decoration: none;
   font-weight: normal;
 }
+.conteudo-portfolio-trabalhos h3{
+  letter-spacing: 7px;
+}
+.conteudo-portfolio-trabalhos div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 #flashCards{
   width: 300px;
   background-color: rgb(0, 0, 0);
@@ -205,8 +214,11 @@ margin-top: -60px;
   height: 100vh;
   
 }
-
+.img-curriculo img{
+  border-radius: 100px;
+}
 .conteudo-contrate{
+  
   display: flex;
   justify-content: space-between;
   top: 90px;
@@ -221,7 +233,7 @@ margin-top: -60px;
 object-fit: cover;
 }
 .conteudo-texto{
-  margin: auto auto;
+  margin: 20px auto;
 }
 .conteudo-texto h2, .conteudo-texto p {
   text-align: center;
@@ -234,12 +246,19 @@ object-fit: cover;
   color:rgb(124, 124, 124)
 }
 .conteudo-portfolio{
-  text-align: center;
+
   display: flex;
 justify-content: space-around;
 padding: 05px;
 flex-wrap: wrap;
 width: 100%;
+}
+.conteudo-portfolio-texto{
+  width: 40%;
+}
+.conteudo-portfolio-texto h3{
+  text-align: center;
+
 }
 .flashsHome{
   display: flex;
@@ -331,6 +350,12 @@ font-size: 15pt;
   padding: 20px;
 }
 
+.pg-curriculo{
+text-align: center;
+}
+.pg-curriculo hr{
+width: 98%;
+}
 #Whats{
   display: none;
   transition: 0.6s;
@@ -419,14 +444,53 @@ font-size: 15pt;
   #topPage{
     flex-direction: column;
   }
+  #flashCards{
+    border-radius: 10px;
+    width: 98%;
+  }
+  #flashCards img{
+    margin: auto auto;
+    border-radius: 10px;
+    width: 98%;
+  }
   #imgIndex-phone{
     display: block;
+  }
+  .conteudo-portfolio-trabalhos div{
+    margin: auto auto;
+  }
+  .flashsCurriculo{
+    margin: auto auto;
+    width: 98%;
+  }
+  .curriculo{
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+#apresentacao{
+  width: 98%;
+}
+  .conteudo-contrate{
+    align-items: center;
   }
   .conteudo-portfolio img{
   width: 98%;
   height: 450px;
   align-items: center;
   border-radius: 10px;
+  margin-top: 20px;
+  
+  }
+  .conteudo-portfolio{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .conteudo-portfolio-texto{
+    width: 95%;
+  
   }
   #imgIndex{
     display: none;

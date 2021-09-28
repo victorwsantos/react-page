@@ -8,8 +8,9 @@ const Sobre = () => (
     <div>
     < Header />
       <div className='pg-curriculo'>
+        <hr></hr>
         <h1>Bem vindos ao meu Curriculo</h1>
-        
+        <hr></hr>
       </div>
       <div className='curriculo'>
         < Curriculo/>
