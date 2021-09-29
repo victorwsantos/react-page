@@ -287,28 +287,14 @@ width: 100%;
   border-top: 10px;
   flex-grow: 1;
 }
-.boxTitle{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #0073b1;
-  padding: 10px;
-  
-  border-radius: 10px;
-  margin-top: 0px;
-}
-.boxImg{
-  width: 30px;
-  height: 30px;
-}
+
 
 #linkeDin{
   display: none;
   transition: 0.6s;
+  position: relative;
+  margin: auto auto;
   width: 89%;
-  
 }
 .linke{
   box-shadow: 0 0 2px;
@@ -320,6 +306,10 @@ width: 100%;
 }
 .linke h2{
   color: white;
+  background-color: #0073b1;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 0px 0px;
   
 }
 .linke hr{
@@ -338,6 +328,7 @@ padding: 10px;
 color: white;
 border-radius: 50px;
 font-size: 15pt;
+cursor: pointer;
 }
 .curriculo, .pg-curriculo{
   padding: 20px;
@@ -367,6 +358,10 @@ width: 98%;
 }
 .Whats h2{
   color: white;
+  background-color: #009688;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 0px 0px;
 }
 .Whats hr{
 width: 97%;
@@ -384,10 +379,13 @@ padding: 10px;
 color: white;
 border-radius: 50px;
 font-size: 15pt;
+cursor: pointer;
 }
 #Discord{
   display: none;
   transition: 0.6s;
+  position: relative;
+  margin: auto auto;
   width: 89%;
 }
 
@@ -401,6 +399,10 @@ font-size: 15pt;
 }
 .Discord h2{
   color: white;
+  background-color: #272e79;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 0px 0px;
 }
 .Discord hr{
 width: 97%;
@@ -413,11 +415,12 @@ width: 97%;
 margin: 30px auto;
 width: 99%;
 border: none;
-background-color: #5865f2;
+background-color: #272e79;
 padding: 10px;
 color: white;
 border-radius: 50px;
 font-size: 15pt;
+cursor: pointer;
 }
 
 @media (max-width: 700px){
