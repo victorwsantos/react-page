@@ -51,7 +51,7 @@ export default function Cards(){
                 <div className='botoes-pg-index'>
                     <button onClick={go}  id='one'>Linkedin</button>
                     <button onClick={gotow} id='tow'>WhatsApp</button>
-                    <button id='three'onClick={gothree}>Discord</button>
+                    <button id='three'onClick={gothree}>GitHub</button>
                 </div>
                 <div id='Whats'>
             < Whats/>
