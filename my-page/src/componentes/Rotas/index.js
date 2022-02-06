@@ -13,6 +13,7 @@ const Rotas = () => (
             <Route path='/Contrate' component={ Contrate } />
             <Route path='/Contatos' component={ Contatos } />
             <Route path='/Login' component={ Login } />
+            <Route path={'/'} component={ Home }/>
         </Switch>
     </BrowserRouter>
 );
