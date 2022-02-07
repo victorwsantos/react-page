@@ -18,7 +18,7 @@ export default function Header(){
                         <li><Link to='/Sobre-mim' className="objetivos" >Curriculo</Link></li>
                         <li><Link to='/Contrate' className="sobre" >Contrate</Link></li>
                         <li><Link to='/Contatos' className="Contatos">Contatos</Link></li>
-                        <li><Link to='/Login' className="Contatos">Login</Link></li>
+                        <li><Link to='/Artigos' className="Contatos">Artigos</Link></li>
                     </ul>
                 </nav>
                 <button id='btn-mb' className="navbutton" onClick={toggleMenu}>&#9776;</button>
