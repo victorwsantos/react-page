@@ -1,0 +1,21 @@
+.card-article{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  padding: 5%;
+  
+  text-align: center;
+}
+.article{
+  border-radius: 10px;
+  box-shadow: 0 0 05px black;
+  min-width: 380px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+span{
+  display: none;
+}

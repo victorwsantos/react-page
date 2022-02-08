@@ -6,6 +6,7 @@ import Sobre from '../Sobre';
 import Contrate from '../Contrate';
 import Login from '../Form';
 import Articles from '../Articles';
+import Article from '../Article';
 const Rotas = () => (
     <BrowserRouter>
         <Switch>
@@ -14,6 +15,7 @@ const Rotas = () => (
             <Route path='/Contrate' component={ Contrate } />
             <Route path='/Contatos' component={ Contatos } />
             <Route path='/Login' component={ Login } />
+            <Route path='/artigos/:id' component={Article}/>
             <Route path='/Artigos' component={Articles}/>
             <Route path={'/'} component={ Home }/>
         </Switch>
