@@ -1,15 +1,24 @@
-const config = require('./config/default')
-const express = require('express')
-const cors = require('cors')
+import DefaultConfig from './config/default.js'
+import Route from './controller/routes.js'
+import express from 'express'
+import cors from 'cors'
+import log from './logger/index.js'
 
+const config = new DefaultConfig()
 
-export default function app(){
+export default function App(){
   const app = express()
   app.use(express.json())
   app.use(cors())
   app.use(express.urlencoded({ extended: false }))
 
+  app.get('/', (req, res)=>{
+    res.send('hello world')
+  })
+
   app.listen(config.port, config.host, ()=>{
-    console.log(`Servidor rodando em https://${config.host}:${config.port}/`)
+    log.info(`Servidor rodando em http://${config.host}:${config.port}/`)
 })
 }
+
+App()
