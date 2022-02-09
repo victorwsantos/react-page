@@ -13,7 +13,7 @@ export default function Form(){
 
     function getValue(ev){
         const {name, value} = ev.target
-        setValue({...values, [name]:value})
+        setValue({values, [name]: value})
 
     }
     function loginAdmin(e){
