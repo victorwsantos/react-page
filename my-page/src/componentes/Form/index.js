@@ -1,15 +1,13 @@
-import react from 'react'
+import './style.css'
 import { useState } from 'react'
-import Footer from '../Footer'
-import Header from '../Header'
 import axios from 'axios'
 import { Redirect } from 'react-router'
 
-export default function Login(){
+export default function Form(){
     
     const initial = {
-        email: '',
-        password: ''
+        tittle: '',
+        text: ''
     }
     const [ values, setValue ] = useState(initial)
 
@@ -21,20 +19,18 @@ export default function Login(){
     function loginAdmin(e){
         e.preventDefault()
 
-        axios.post("http://localhost:3003/login", values).then(()=>{
+        axios.post("http://localhost:3005/add-article", values).then(()=>{
         })
     }
     console.log(values)
     return (
         <div>
-            <Header/>
-            <div>
-                <h1>Login</h1>
-                <label>Email</label><input type='text' name='email' placeholder='Email' onChange={getValue}></input>
-                <label>Senha</label><input type='password' name='password' placeholder='Password'onChange={getValue}></input>
+            <div className='form'>
+                <h1>Daqui saem os melhores artigos!!</h1>
+                <label>Titulo do artigo</label><input type='text' name='tittle' placeholder='Titulo' onChange={getValue}></input>
+                <label className='label2'>Conteudo</label><textarea rows={20} cols={50} name='text' placeholder='O artigo de hoje é sobre...' onChange={getValue}/>
                 <button type='submit' onClick={loginAdmin}>Entrar</button>
             </div>
-            <Footer/>
         </div>
     )
 }
