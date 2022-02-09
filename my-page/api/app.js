@@ -1,5 +1,5 @@
 import DefaultConfig from './config/default.js'
-import Route from './controller/routes.js'
+import route from './controller/routes.js'
 import express from 'express'
 import cors from 'cors'
 import log from './logger/index.js'
@@ -12,9 +12,7 @@ export default function App(){
   app.use(cors())
   app.use(express.urlencoded({ extended: false }))
 
-  app.get('/', (req, res)=>{
-    res.send('hello world')
-  })
+  app.use(route)
 
   app.listen(config.port, config.host, ()=>{
     log.info(`Servidor rodando em http://${config.host}:${config.port}/`)
