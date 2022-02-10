@@ -9,7 +9,6 @@ export default function Header(){
     }
     function dropDown(){
         const drop = document.getElementById('drop')
-        console.log('pegou')
         drop.classList.toggle('dropdown')
     }
     return(
