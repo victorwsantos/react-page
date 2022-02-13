@@ -1,6 +1,6 @@
 import React from 'react';
 import FlashCards from '../FlashCards'
-import ConteudoHome from '../ConteudoHome';
+import ConteudoHome from '../../pages/ConteudoHome';
 
 export default function Curriculo(){
     return(

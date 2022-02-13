@@ -1,10 +1,14 @@
 import express from 'express'
 import cors from 'cors'
 import {config} from '../config/default'
-import { Route } from '../routes/routes'
+import Administrador from '../db/connect'
+
+
 export class Service{
   app
+  connect =  Administrador
   constructor(){
+      this.connect
       this.app = express()
       this.app.use(cors())
       this.app.use(express.json())

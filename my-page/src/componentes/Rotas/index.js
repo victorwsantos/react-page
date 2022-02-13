@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Contatos from '../Contatos';
-import Home from '../Home';
+import Contatos from '../../pages/Contatos';
+import Home from '../../pages/Home';
 import Sobre from '../Sobre';
-import Contrate from '../Contrate';
+import Contrate from '../../pages/Contrate';
 import Login from '../Form';
-import Articles from '../Articles';
+import Articles from '../../pages/Articles/';
 import Article from '../Article';
-import CreateArticle from '../CreateArticle';
+import CreateArticle from '../../pages/CreateArticle';
 const Rotas = () => (
     <BrowserRouter>
         <Switch>

@@ -1,6 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Route = void 0;
+const connect_1 = __importDefault(require("../db/connect"));
 const service_1 = require("../service");
 class Route extends service_1.Service {
     constructor() {
@@ -17,8 +21,17 @@ class Route extends service_1.Service {
         });
     }
     routerPost() {
-        this.app.post('/', (req, res) => {
-            res.send('rota post');
+        this.app.post('/add-article', (req, res) => {
+            const { tittle, text } = req.body;
+            const article = {
+                tittle,
+                text
+            };
+            connect_1.default.create(article).then(() => {
+                res.send('Artigo criado com sucesso.');
+            }).catch((err) => {
+                console.log(err);
+            });
         });
     }
 }

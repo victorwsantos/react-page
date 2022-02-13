@@ -32,7 +32,7 @@ export default function Form(){
                 <h1>Daqui saem os melhores artigos!!</h1>
                 <label>Titulo do artigo</label><input type='text' name='tittle' placeholder='Titulo' onChange={getValue}></input>
                 <label className='label2'>Conteudo</label><textarea id='text' maxLength={7000} rows={20} cols={50} name='text' placeholder='O artigo de hoje é sobre...' onChange={getValue}/>
-                <p id='caracteres'>{mxlength}/{lengthValues}</p>
+                <p id='caracteres'>{lengthValues}/{mxlength}</p>
                 <button type='submit' onClick={loginAdmin}>Entrar</button>
             </div>
         </div>

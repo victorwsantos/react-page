@@ -1,4 +1,5 @@
 import {Express, Request, Response} from 'express'
+import Administrador from '../db/connect'
 import { Service } from '../service'
 
 export class Route extends Service {
@@ -17,8 +18,20 @@ export class Route extends Service {
     })
   }
   routerPost(){
-    this.app.post('/', (req: Request, res: Response)=>{
-      res.send('rota post')
+    this.app.post('/add-article', (req: Request, res: Response)=>{
+      
+      const {tittle, text} = req.body
+      const article = {
+        tittle,
+        text
+      }
+      Administrador.create(article).then(() => {
+        res.send('Artigo criado com sucesso.')
+      }).catch((err: string) => {
+        console.log(err)
+      })
+      
+      
     })
   }
 }
