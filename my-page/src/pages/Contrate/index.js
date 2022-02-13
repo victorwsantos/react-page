@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Header"
-import Footer from "../Footer"
-import FlashCards from "../FlashCards";
+import Header from "../../componentes/Header"
+import Footer from "../../componentes/Footer"
+import FlashCards from "../../componentes/FlashCards";
 import '../../App.css';
 
 const Contrate = () => (

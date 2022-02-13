@@ -1,8 +1,8 @@
 import React from "react";
-import Header from '../Header'
+import Header from '../../componentes/Header'
 import ConteudoHome from "../ConteudoHome";
-import Footer from '../Footer'
-import Apresentacao from "../Apresentacao";
+import Footer from '../../componentes/Footer'
+import Apresentacao from "../../componentes/Apresentacao";
 
 function Home() {
   

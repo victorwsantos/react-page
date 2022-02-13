@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Header"
-import Cards from "../Cards";
-import Footer from "../Footer"
+import Header from "../../componentes/Header"
+import Cards from "../../componentes/Cards";
+import Footer from "../../componentes/Footer"
 import '../../App.css';
 const Contatos = () => (
     <div className='pg-completa'>

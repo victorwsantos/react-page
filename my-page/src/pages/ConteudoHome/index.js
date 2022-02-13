@@ -1,5 +1,5 @@
 import React from "react";
-import FlashCards from "../FlashCards";
+import FlashCards from "../../componentes/FlashCards";
 export default function ConteudoHome(){
     return(
     <div>
