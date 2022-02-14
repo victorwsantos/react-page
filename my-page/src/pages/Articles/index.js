@@ -1,29 +1,30 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../componentes/Header"
+import { useEffect } from "react";
 import './style.css'
 export default function Articles() {
+    const [article, setArticle ] = useState()
+    useEffect(()=>{
+        axios.get('http://localhost:3005/articles').then((response)=>{
+        console.log(response.data)
 
-    const conteudo = [
-        { id: 1, title: 'De Dev Jr para Dev Jr', content: 'Vamos bater um papo legal?' },
-        { id: 2, title: 'Artigo 2', content: 'Bla bla bla' },
-        { id: 3, title: 'Artigo 3', content: 'Bla bla bla' },
-        { id: 4, title: 'Artigo 4', content: 'Bla bla bla' }
-    ]
-    conteudo.map((i) => {
-        console.log(i.title)
-    })
+        setArticle(response.data)
+
+        })
+    },[])
 
     return (
         <React.Fragment>
             <Header />
             <div  className="card-article">
-                {typeof conteudo !== 'undefined' && conteudo.map((item) => {
+                {typeof article !== 'undefined' && article.map((item) => {
                     return (
                         <div className="article" key={item.id}>
-                            <h1>{item.title}</h1>
-                            <p>{item.content}</p>
-                            <Link to={`/artigos/${item.id}`}><button>Ver Artigo ({item.title})</button></Link>
+                            <h1>{item.tittle}</h1>
+                            <p>{item.text}</p>
+                            <Link to={`/artigos/${item.id}`}><button>Ver Artigo ({item.tittle})</button></Link>
                         </div>
                         )
                 })}

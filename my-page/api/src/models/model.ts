@@ -1,14 +1,14 @@
-const mongoose = require('mongoose')
+const mongose = require('mongoose')
 
-const ArticleModel = mongoose.model('articles', {
-  tittle: {
-    type: String,
-    require: true
-  },
-  text: {
-    type: String,
-    require: true
-  }
+const Administrador = mongose.model('administrador', {
+    tittle: {
+        type: String,
+        require: true
+    },
+    text: {
+        type: String,
+        require: true
+    }
 })
 
-module.exports = ArticleModel
+export default Administrador

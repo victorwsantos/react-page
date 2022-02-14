@@ -1,13 +1,16 @@
 import express from 'express'
 import cors from 'cors'
 import {config} from '../config/default'
-import Administrador from '../db/connect'
+import Administrador from '../models/model'
+import connect from '../db/db'
 
 
 export class Service{
   app
   connect =  Administrador
+  db = connect()
   constructor(){
+      this.db
       this.connect
       this.app = express()
       this.app.use(cors())

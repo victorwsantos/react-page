@@ -1,6 +1,7 @@
 "use strict";
-const mongoose = require('mongoose');
-const ArticleModel = mongoose.model('articles', {
+Object.defineProperty(exports, "__esModule", { value: true });
+const mongose = require('mongoose');
+const Administrador = mongose.model('administrador', {
     tittle: {
         type: String,
         require: true
@@ -10,4 +11,4 @@ const ArticleModel = mongoose.model('articles', {
         require: true
     }
 });
-module.exports = ArticleModel;
+exports.default = Administrador;

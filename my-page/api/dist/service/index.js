@@ -7,10 +7,13 @@ exports.Service = void 0;
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const default_1 = require("../config/default");
-const connect_1 = __importDefault(require("../db/connect"));
+const model_1 = __importDefault(require("../models/model"));
+const db_1 = __importDefault(require("../db/db"));
 class Service {
     constructor() {
-        this.connect = connect_1.default;
+        this.connect = model_1.default;
+        this.db = (0, db_1.default)();
+        this.db;
         this.connect;
         this.app = (0, express_1.default)();
         this.app.use((0, cors_1.default)());
