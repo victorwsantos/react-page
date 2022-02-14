@@ -1,13 +1,13 @@
 import mongoose from 'mongoose'
-import {config} from '../config/default'
+import { config } from '../config/default'
 
 
-function connect(){
+function connect() {
   const dbUrl = config.dbUrl
-  return mongoose.connect(dbUrl).then(()=>{
+  return mongoose.connect(dbUrl).then(() => {
     console.log('Banco de dados conectado')
-  }).catch((err)=>{
-    console.log('Não possivel conectar. Erro '+ err)
+  }).catch((err) => {
+    console.log('Não possivel conectar. Erro ' + err)
   })
 }
 
