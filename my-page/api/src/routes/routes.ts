@@ -1,14 +1,12 @@
-import { Router, Express, Request, Response } from 'express'
+import { Request, Response } from 'express'
 import Administrador from '../models/model'
 import { Service } from '../service'
-import { Upload } from '../upload/upload'
 
-export class Route extends Service {
-
-  upload: any
+export class Route {
+  app = new Service().app
 
   constructor() {
-    super()
+
     this.routersGet()
     this.routerPost()
     this.routeUpdate()
@@ -18,7 +16,9 @@ export class Route extends Service {
     this.app.get('/', (req: Request, res: Response): void => {
       res.send('hello World')
     })
+
     this.app.get('/articles', async (req: Request, res: Response): Promise<any> => {
+
       try {
         const article = await Administrador.find()
         res.status(200).json(article)
@@ -26,8 +26,10 @@ export class Route extends Service {
         res.status(500).json({ message: error })
       }
     })
+
     this.app.get('/articles/:id', async (req: Request, res: Response): Promise<any> => {
       const id = req.params.id
+
       try {
         const article = await Administrador.findOne({ _id: id })
         res.send(article)
@@ -36,9 +38,9 @@ export class Route extends Service {
       }
     })
   }
+
   routerPost() {
-    const upload = new Upload().upload
-    this.app.post('/add-article', upload.single('file'), async (req: Request, res: Response): Promise<any> => {
+    this.app.post('/add-article', async (req: Request, res: Response): Promise<any> => {
 
       const { tittle, text, img } = req.body
       const article = {
@@ -46,6 +48,7 @@ export class Route extends Service {
         text,
         img
       }
+
       try {
         await Administrador.create(article)
         res.status(200).json({ message: 'Artigo criado com sucesso.' })
@@ -55,6 +58,7 @@ export class Route extends Service {
 
     })
   }
+
   routeUpdate() {
     this.app.put('/update/:id', async (req: Request, res: Response): Promise<any> => {
       const id = req.params.id
@@ -62,6 +66,7 @@ export class Route extends Service {
       const article = {
         text,
       }
+
       try {
         await Administrador.updateOne({ _id: id }, article)
         res.send(202).json({ message: 'Atualizou' })
@@ -70,10 +75,12 @@ export class Route extends Service {
       }
     })
   }
+
   routeDelet() {
     this.app.delete('/delete/:id', async (req: Request, res: Response): Promise<any> => {
       const id = req.params.id
       const article = Administrador.findOne({ _id: id })
+
       try {
         await Administrador.deleteOne({ _id: id })
         res.send(202).json({ message: 'apagou tudo' }).redirect('http://localhost:3000/Artigos')

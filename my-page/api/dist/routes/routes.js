@@ -15,10 +15,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Route = void 0;
 const model_1 = __importDefault(require("../models/model"));
 const service_1 = require("../service");
-const upload_1 = require("../upload/upload");
-class Route extends service_1.Service {
+class Route {
     constructor() {
-        super();
+        this.app = new service_1.Service().app;
         this.routersGet();
         this.routerPost();
         this.routeUpdate();
@@ -49,8 +48,7 @@ class Route extends service_1.Service {
         }));
     }
     routerPost() {
-        const upload = new upload_1.Upload().upload;
-        this.app.post('/add-article', upload.single('file'), (req, res) => __awaiter(this, void 0, void 0, function* () {
+        this.app.post('/add-article', (req, res) => __awaiter(this, void 0, void 0, function* () {
             const { tittle, text, img } = req.body;
             const article = {
                 tittle,
