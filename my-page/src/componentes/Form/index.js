@@ -1,6 +1,6 @@
 import './style.css'
 import { useState } from 'react'
-import axios from 'axios'
+import { requests } from '../../axios'
 
 export default function Form() {
 
@@ -19,7 +19,7 @@ export default function Form() {
     function sendValues(e) {
         e.preventDefault()
 
-        axios.post("http://localhost:3005/add-article", values).then(() => {
+        requests.requestsPost('add-article', values).then(() => {
             alert('Publicado')
         })
     }

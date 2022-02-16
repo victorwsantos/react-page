@@ -1,4 +1,5 @@
 import axios from "axios";
+import { requests } from '../../axios'
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../componentes/Header"
@@ -9,7 +10,7 @@ export default function Articles() {
 
 
     useEffect(() => {
-        axios.get('http://localhost:3005/articles').then((response) => {
+        requests.requestsGet('articles').then((response) => {
             setArticle(response.data)
         })
     }, [])

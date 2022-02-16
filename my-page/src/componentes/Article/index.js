@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import './style.css'
 import Header from "../Header";
 import { useParams } from "react-router";
-import axios from "axios";
+import { requests } from "../../axios";
 import { Link } from "react-router-dom";
 
 
@@ -22,7 +22,8 @@ export default function Article() {
     }
 
     useEffect(() => { // Refatorar requisição AXIOS
-        axios.get(`http://localhost:3005/articles/${id}`).then((response) => {
+
+        requests.requestsGet(`articles/${id}`).then((response) => {
             setArticle(response.data)
 
         })
@@ -38,14 +39,14 @@ export default function Article() {
     function deleteArticle(e) {
         e.preventDefault()
 
-        axios.delete(`http://localhost:3005/delete/${id}`).then(() => {
+        requests.requestsDelet(`delete/${id}`).then(() => {
             alert('Excliu')
         })
     }
     function saveEdit(e) {
         e.preventDefault()
 
-        axios.put(`http://localhost:3005/update/${id}`, updateValues).then(() => {
+        requests.requestsUpdate(`update/${id}`, updateValues).then(() => {
             alert('Atualizado com sucesso')
         })
     }
