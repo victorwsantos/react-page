@@ -3,7 +3,6 @@ import './style.css'
 import Header from "../Header";
 import { useParams } from "react-router";
 import { requests } from "../../axios";
-import { Link } from "react-router-dom";
 
 
 export default function Article() {
