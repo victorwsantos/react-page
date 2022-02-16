@@ -1,0 +1,15 @@
+.card-article-individual{
+  width: 90%;
+  margin: 5px auto;
+  padding: 10px;
+  height: 100%;
+}
+#editor{
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+#saveEdit{
+  display: none;
+}

@@ -21,6 +21,7 @@ class Route extends service_1.Service {
         super();
         this.routersGet();
         this.routerPost();
+        this.routeUpdate();
         this.routeDelet();
     }
     routersGet() {
@@ -34,6 +35,16 @@ class Route extends service_1.Service {
             }
             catch (error) {
                 res.status(500).json({ message: error });
+            }
+        }));
+        this.app.get('/articles/:id', (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const id = req.params.id;
+            try {
+                const article = yield model_1.default.findOne({ _id: id });
+                res.send(article);
+            }
+            catch (error) {
+                res.send(402).json({ message: error });
             }
         }));
     }
@@ -55,13 +66,29 @@ class Route extends service_1.Service {
             }
         }));
     }
+    routeUpdate() {
+        this.app.put('/update/:id', (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const id = req.params.id;
+            const { text } = req.body;
+            const article = {
+                text,
+            };
+            try {
+                yield model_1.default.updateOne({ _id: id }, article);
+                res.send(202).json({ message: 'Atualizou' });
+            }
+            catch (error) {
+                res.status(500).json({ message: 'rota errada' });
+            }
+        }));
+    }
     routeDelet() {
         this.app.delete('/delete/:id', (req, res) => __awaiter(this, void 0, void 0, function* () {
             const id = req.params.id;
             const article = model_1.default.findOne({ _id: id });
             try {
                 yield model_1.default.deleteOne({ _id: id });
-                res.send(202).json({ message: 'apagou tudo' });
+                res.send(202).json({ message: 'apagou tudo' }).redirect('http://localhost:3000/Artigos');
             }
             catch (error) {
                 res.status(500).json({ message: 'rota errada' });
