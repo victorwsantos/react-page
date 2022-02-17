@@ -1,12 +1,12 @@
 import { Request, Response } from 'express'
 import Administrador from '../models/model'
-import { Service } from '../service'
+
 
 export class Route {
-  app = new Service().app
+  app
 
-  constructor() {
-
+  constructor(app: any) {
+    this.app = app
     this.routersGet()
     this.routerPost()
     this.routeUpdate()

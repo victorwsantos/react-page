@@ -5,7 +5,7 @@ import Administrador from '../models/model'
 import connect from '../db/db'
 
 
-export class Service {
+class Service {
   app
   connect = Administrador
   db = connect()
@@ -19,3 +19,7 @@ export class Service {
     this.app.use(express.urlencoded({ extended: false }))
   }
 }
+
+const app = new Service().app
+
+export default app

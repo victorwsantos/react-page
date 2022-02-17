@@ -14,10 +14,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Route = void 0;
 const model_1 = __importDefault(require("../models/model"));
-const service_1 = require("../service");
 class Route {
-    constructor() {
-        this.app = new service_1.Service().app;
+    constructor(app) {
+        this.app = app;
         this.routersGet();
         this.routerPost();
         this.routeUpdate();
