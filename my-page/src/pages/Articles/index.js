@@ -1,4 +1,4 @@
-import { requests } from '../../axios'
+import { requests } from '../../functions/axios'
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../componentes/Header"
@@ -9,7 +9,7 @@ export default function Articles() {
 
 
     useEffect(() => {
-        requests.requestsGet('articles').then((response) => {
+        requests.requestsGetArticles('articles').then((response) => {
             setArticle(response.data)
         })
     }, [])
