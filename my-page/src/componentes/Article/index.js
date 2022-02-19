@@ -38,7 +38,7 @@ export default function Article() {
     function deleteArticle(e) {
         e.preventDefault()
 
-        requests.deleteArticle(`delete/${id}`).then(() => {
+        requests.requestsDeletArticle(`delete/${id}`).then(() => {
             alert('Excliu')
         })
     }

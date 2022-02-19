@@ -17,12 +17,23 @@ export default function Header() {
                 <nav id='navega'>
                     <ul id='menu'>
                         <li><Link to='/' className="Home" >Home</Link></li>
-                        <li><Link to='/Sobre-mim' className="objetivos" >Curriculo</Link></li>
-                        <li><Link to='/Contrate' className="sobre" >Contrate</Link></li>
-                        <li><Link to='/Contatos' className="Contatos">Contatos</Link></li>
-                        <li onMouseOver={dropDown} className='drop-menu'><Link to='/Artigos' className="Contatos">Artigos</Link></li>
+                        <li className='drop-menu'><Link to='/Artigos' className="Contatos">Artigos</Link></li>
+                        <li onMouseEnter={dropDown} > Menu</li>
                         <ul className='drop-down' id='drop'>
-                            <Link onMouseLeave={dropDown} to='Create-Article'><li >Criar Artigo</li></Link>
+                            <div onMouseLeave={dropDown} id='drop-menu'>
+                                <div>
+                                    <li><Link to='/Sobre-mim' className="objetivos" >Curriculo</Link></li>
+                                </div>
+                                <div>
+                                    <li><Link to='/Contrate' className="sobre" >Contrate</Link></li>
+                                </div>
+                                <div>
+                                    <Link to='Create-Article'><li >Criar Artigo</li></Link>
+                                </div>
+                                <div>
+                                    <li><Link to='/Contatos' className="Contatos">Contatos</Link></li>
+                                </div>
+                            </div>
 
                         </ul>
                     </ul>
