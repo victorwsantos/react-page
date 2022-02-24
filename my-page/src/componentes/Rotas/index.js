@@ -8,6 +8,7 @@ import FormUser from '../../pages/User';
 import Articles from '../../pages/Articles/';
 import Article from '../Article';
 import CreateArticle from '../../pages/CreateArticle';
+import SingIn from '../../pages/SingIn';
 const Rotas = () => (
     <BrowserRouter>
         <Switch>
@@ -16,6 +17,7 @@ const Rotas = () => (
             <Route path='/Contrate' component={Contrate} />
             <Route path='/Contatos' component={Contatos} />
             <Route path='/Login' component={FormUser} />
+            <Route path='/Singin' component={SingIn} />
             <Route path='/Create-Article' component={CreateArticle} />
             <Route path='/artigos/:id' component={Article} />
             <Route path='/Artigos' component={Articles} />

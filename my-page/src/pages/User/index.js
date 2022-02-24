@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { RequestsAuth } from '../../functions/auth'
+import Header from '../../componentes/Header'
 
 export default function FormUser() {
 
@@ -17,19 +18,21 @@ export default function FormUser() {
     setValue({ ...values, [name]: value })
 
   }
-  function sendValues(e) {
+  async function  sendValues(e) {
     e.preventDefault()
 
-    RequestsAuth.requestAuthPost('route', values).then(() => {
+      RequestsAuth.requestAuthPost('add-user', values).then(() => {
       alert('Cadastrado')
-    }).catch(() => {
+    }).catch((err) => {
       alert('deu ruim')
     })
   }
   console.log(values)
   return (
     <div>
+      <Header/>
       <div className='form'>
+        
         <h1>Cadastro de usuário</h1>
         <input type='text' name='name' placeholder='nome' onChange={getValue} />
         <input type='number' name='age' placeholder='age' onChange={getValue} />
