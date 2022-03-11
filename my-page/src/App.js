@@ -1,10 +1,11 @@
 import React from 'react';
 import Rotas from './componentes/Rotas';
-
+import { AuthProvider } from './functions/context';
 const App = () => (
   <div className="App">
-    
-    <Rotas/>
+    <AuthProvider>
+      <Rotas/>
+    </AuthProvider>
   </div>
 );
 

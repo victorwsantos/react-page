@@ -1,9 +1,10 @@
 import FormData from "../../componentes/FormData";
 import Header from "../../componentes/Header";
 import { RequestsAuth } from "../../functions/auth";
-import { useState, Context, useContext } from "react";
+import { useState } from "react";
 import Button from "../../componentes/Button";
-
+import { context } from "../../functions/context";
+import { useContext } from "react";
 
 
 export default function SingIn(){
@@ -13,6 +14,8 @@ export default function SingIn(){
   }
   const [values, setValues] = useState(initial)
 
+  const ctx = useContext(context)
+  console.log(ctx)
 
   const getValues = (ev) =>{
     const {name, value} = ev.target
@@ -42,7 +45,7 @@ export default function SingIn(){
 
           <FormData
             id='teste'
-            type='text'
+            type='password'
             name='password'
             onChange={getValues}
             

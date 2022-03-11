@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "../../componentes/Header"
 import { useEffect } from "react";
 import './style.css'
+
 export default function Articles() {
     const [article, setArticle] = useState()
 
