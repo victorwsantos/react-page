@@ -1,35 +1,20 @@
 import FormData from "../../componentes/FormData";
 import Header from "../../componentes/Header";
-import { RequestsAuth } from "../../functions/auth";
-import { useState } from "react";
 import Button from "../../componentes/Button";
 import { context } from "../../functions/context";
 import { useContext } from "react";
 
 
 export default function SingIn(){
-  const initial = {
-    email: '',
-    password: ''
-  }
-  const [values, setValues] = useState(initial)
+  
+  
+  const {authentication, hendle, getValues} = useContext(context)
 
-  const ctx = useContext(context)
-  console.log(ctx)
+  
+  console.log(authentication)
 
-  const getValues = (ev) =>{
-    const {name, value} = ev.target
-    setValues({...values, [name]: value})
-  }
 
-  const sendValues = async () =>{
-   await RequestsAuth.requestAuthPost('auth', values).then(()=>{
-     alert('logou')
-   }).catch(()=>{
-     alert('não foi dessa vez')
-   })
-    
-  }
+      
 
   return(
       <>
@@ -53,7 +38,7 @@ export default function SingIn(){
             
             <Button
             btnName='Login'
-            onSubmit={sendValues}
+            onSubmit={hendle}
             />
         </div>
       </>
