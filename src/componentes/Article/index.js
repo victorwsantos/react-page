@@ -20,19 +20,11 @@ export default function Article() {
         setUpdateValues({ ...updateValues, [name]: value })
     }
 
-    useEffect(() => { // Refatorar requisição AXIOS
+    useEffect(() => { 
 
         requests.requestsGetArticles(`articles/${id}`).then((response) => {
             setArticle(response.data)
-
         })
-        // const setArticles = async () => {
-        //     const articles = await getArticlesById(id)
-        //     setArticle(articles)
-        // } 
-
-        // setArticles()
-
     }, [id])
 
     function deleteArticle(e) {

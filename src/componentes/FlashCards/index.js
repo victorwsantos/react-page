@@ -14,7 +14,10 @@ export default function FlashCards(props) {
                 <p>{props.descricao}</p>
             </div>
             <div>
-                <img className='imagem' src={props.img} alt='img' />
+                <img 
+                 className='imagem'
+                 src={props.img} 
+                 alt='img' />
             </div>
         </div>
     )

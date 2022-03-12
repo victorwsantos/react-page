@@ -34,9 +34,11 @@ export default function Cards() {
     return (
 
         <div className='div-contatos'>
+            
             <div className='conteudo-pg'>
                 <h1>Gostou do meu conteudo?</h1>
                 <p>Não perca tempo, entre em em contato!!!</p>
+
                 <div className='botoes-pg-index'>
                     <button onClick={go} id='one'>Linkedin</button>
                     <button onClick={gotow} id='tow'>WhatsApp</button>
