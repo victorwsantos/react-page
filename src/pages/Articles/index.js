@@ -23,7 +23,7 @@ export default function Articles() {
                     return (
                         <div className="article" key={item._id}>
                             <h1>{item.tittle}</h1>
-                            <p>{item.text}</p>
+                            <p className='text'>{item.text}</p>
                             <Link to={`/artigos/${item._id}`}><button>Ver Artigo ({item.tittle})</button></Link>
                         </div>
                     )

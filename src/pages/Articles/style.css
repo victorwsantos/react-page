@@ -19,3 +19,6 @@
 span{
   display: none;
 }
+.text{
+  white-space: pre-wrap
+}

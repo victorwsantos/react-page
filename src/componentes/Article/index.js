@@ -59,7 +59,7 @@ export default function Article() {
             <div className="card-article-individual">
                 <h1>{article.tittle}</h1>
                 <p id='content'>{article.text}</p>
-                <textarea id='editor' name="text" onChange={updateValue} placeholder={article.text} />
+                <textarea id='editor' name="text" onChange={updateValue} defaultValue={article.text} />
                 <button id='saveEdit' onClick={saveEdit}> Salvar Edição </button>
                 <button id='edit-button' onClick={showEditor}> Editar </button>
                 <button onClick={deleteArticle}> Excluir </button>

@@ -13,3 +13,6 @@
 #saveEdit{
   display: none;
 }
+#content, #editor{
+  white-space: pre-wrap;
+}
