@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css'
+import { context } from "../../functions/context";
+import { useContext } from "react";
+
 export default function Header() {
     
+    const {authentication} = useContext(context)
+
     function toggleMenu() {
         const nav = document.getElementById('navega');
         nav.classList.toggle('active');
@@ -12,6 +17,7 @@ export default function Header() {
         const drop = document.getElementById('drop')
         drop.classList.toggle('dropdown')
     }
+    
     return (
         <div className='topo'>
             <div className='componentes-topo'>
@@ -53,10 +59,11 @@ export default function Header() {
                                         </div>
                                         <div>
                                             <li>
-                                                <Link 
+                                                {authentication ? <Link>Logout</Link>: <Link 
                                                     to='/Singin' 
                                                     className="Contatos">Login
-                                                </Link>
+                                                </Link>}
+                                                
                                             </li>
                                         </div>
                                     </div>

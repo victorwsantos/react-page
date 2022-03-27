@@ -1,13 +1,10 @@
 import React from 'react'
-import {createContext, useState, useEffect} from "react";
+import {createContext, useState} from "react";
 import {RequestsAuth} from './auth'
 
 const context = createContext()
 
 function AuthProvider({children}){
-
-  
-  useEffect(()=>{})
  
   const initial = {
     email: '',
@@ -30,12 +27,11 @@ function AuthProvider({children}){
 
    await RequestsAuth.requestAuthPost('auth/login', values)
    .then(()=>{
-      
-    alert('logou')
+      alert('logou')
       setAutentication(true)})
-
+  
    .catch(()=>{
-     alert('não foi dessa vez')})
+      alert('não foi dessa vez')})
     }
 
   return (
